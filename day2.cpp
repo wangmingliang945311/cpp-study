@@ -1,20 +1,20 @@
 #include<iostream>
 #include<string>
 int main(){
-	//声明变量
+	//鍙橀噺瀹氫箟
 	int age=18;
 	double height=173.45;
 	char grade='A';
-	std::string name="wangmingliang";
-	//输出变量
-	std::cout<<"姓名"<<name<<std::endl;
-	std::cout<<"年龄"<<age<<std::endl;
-	std::cout<<"身高"<<height<<"cm"<<std::endl;
-	std::cout<<"等级"<<grade<<std::endl;
-	//接收用户输入
+	std::string name = "wangmingliang";
+	//杈撳嚭鍙橀噺
+	std::cout<<"Name:"<<name<<std::endl;
+	std::cout<<"Age:"<<age<<std::endl;
+	std::cout<<"Height:"<<height<<"cm"<<std::endl;
+	std::cout<<"Grade:"<<grade<<std::endl;
+	//鎺ユ敹鐢ㄦ埛杈撳叆
 	int num1,num2;
-	std::cout<<"请输入两个整数";
+	std::cout<<"Enter two integers";
 	std::cin>>num1>>num2;
-	std::cout<<"它们的和为："<<num1+num2<<std::endl;
+	std::cout<<"Their sum is:"<<num1+num2<<std::endl;
 	return 0; 
 }

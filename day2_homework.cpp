@@ -1,13 +1,15 @@
 #include<iostream>
 #include<string>
 int main(){
-	//¶¨Òå±äÁ¿ 
+	//å®šä¹‰å˜é‡
+	#include<windows.h>
+	SetConsoleOutputCP(65001);
 	double num1,num2,num3;
-	//½ÓÊÕÓÃ»§ÊäÈëĞÅÏ¢
-	std::cout<<"ÇëÊäÈëÄãµÄÓïÎÄ£¬ÊıÑ§£¬Ó¢Óï³É¼¨";
+	//æ¥æ”¶ç”¨æˆ·è¾“å…¥ä¿¡æ¯
+	std::cout<<"è¯·è¾“å…¥ä½ çš„è¯­æ–‡ï¼Œæ•°å­¦ï¼Œè‹±è¯­æˆç»©";
 	std::cin>>num1>>num2>>num3;
-	//´¦ÀíĞÅÏ¢²¢Êä³ö
-	std::cout<<"ÄãµÄ×Ü·ÖÎª£º"<<num1+num2+num3<<std::endl;
-	std::cout<<"ÄãµÄÆ½¾ù·ÖÎª£º"<<(num1+num2+num3)/3.0<<std::endl;
+	//å¤„ç†ä¿¡æ¯å¹¶è¾“å‡º
+	std::cout<<"ä½ çš„æ€»åˆ†ä¸ºï¼š"<<num1+num2+num3<<std::endl;
+	std::cout<<"ä½ çš„å¹³å‡åˆ†ä¸ºï¼š"<<(num1+num2+num3)/3.0<<std::endl;
 	return 0; 
 }
