@@ -13,7 +13,7 @@ int main(){
 	std::cout<<"Grade:"<<grade<<std::endl;
 	//接收用户输入
 	int num1,num2;
-	std::cout<<"Enter two integers";
+	std::cout<<"Enter two integers"<<std::endl;
 	std::cin>>num1>>num2;
 	std::cout<<"Their sum is:"<<num1+num2<<std::endl;
 	return 0; 
