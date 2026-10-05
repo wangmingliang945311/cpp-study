@@ -5,6 +5,6 @@ int main(){
     std::cin>>a>>b>>c;
     if(a<=b){a=b;}
     if(a<=c){a=c;}
-    std::cout<<"The largest number is:a"<<a;
+    std::cout<<"The largest number is:"<<a;
     return 0;
 }
