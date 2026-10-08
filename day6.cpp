@@ -20,14 +20,14 @@ int main(){
     int scores[5]={90,85,78,96,88};
     int length=5;
 
-    std::cout<<"All scores:";
+    std::cout<<"All scores is:";
     for(int i=0;i<length;i++){
         std::cout<<scores[i]<<" ";
     }
     std::cout<<std::endl;
 
     double avg=getAverage(scores,length);
-    std::cout<<"Max score is:"<<avg<<std::endl;
+    std::cout<<"Average score is:"<<avg<<std::endl;
     
     int maxScore=findMaxInArray(scores,length);
     std::cout<<"Max score is:"<<maxScore<<std::endl;
