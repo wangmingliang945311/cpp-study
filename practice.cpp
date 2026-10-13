@@ -1,34 +1,60 @@
 #include<iostream>
-double getAverage(double arr[],int size){
-    double total=0;
+using namespace std;
+
+void printArray(double arr[],int size){
     for(int i=0;i<size;i++){
-        total+=arr[i];
+        cout<<arr[i]<<" ";
     }
-    return (double)total/size;
+    cout<<endl;
 }
-double findMaxInArray(double arr[],int size){
-    double max=arr[0];
+
+void reverseArray(double arr[],int size){
+    for(int i=0;i<size/2;i++){
+        double temp=arr[i];
+        arr[i]=arr[size-i-1];
+        arr[size-1-i]=temp;
+    }
+}
+
+int linearSearch(double arr[],int size,double target){
     for(int i=0;i<size;i++){
-        if(max<arr[i]){
-            max=arr[i];
+        if(arr[i]==target){
+            return i;
         }
     }
-    return max;
+    return -1;
 }
-int main(){
-    double scores[5]={99,93,85,66,75};
-    int lenght=5;
 
-    std::cout<<"All scores is:";
-    for(int i=0;i<lenght;i++){
-        std::cout<<scores[i]<<" ";
+void bubblesort(double arr[],int size){
+    for(int i=0;i<size-1;i++){
+        for(int j=0;j<size-1-i;j++){
+            if(arr[j]>arr[j+1]){
+                double temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
     }
+}
 
-    double avg=getAverage(scores,lenght);
-    std::cout<<"Average score is:"<<avg<<std::endl;
+int main(){
+    double arr[5]={9.9,9.9,6.0,3.0,5.6};
+    int size=sizeof(arr)/sizeof(arr[0]);
 
-    double max=findMaxInArray(scores,lenght);
-    std::cout<<"Max score is:"<<max<<std::endl;
+    cout<<"Original: ";
+    printArray(arr,size);
+
+    reverseArray(arr,size);
+    cout<<"Reverse: ";
+    printArray(arr,size);
+
+    double target=9.9;
+    int index=linearSearch(arr,size,target);
+    cout<<"Index of "<<target<<": "<<index<<endl;
+
+    bubblesort(arr,size);
+    cout<<"Sorted: ";
+    printArray(arr,size);
 
     return 0;
 }

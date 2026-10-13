@@ -41,11 +41,11 @@ int main(){
     double arr[]={9.9,8.6,7.3,3.3,5.5,6.6};
     int size=sizeof(arr)/sizeof(arr[0]);
 
-    cout<<"Reversed:";
+    cout<<"Original:";
     printArray(arr,size);
 
     reverseArray(arr,size);
-    cout<<"Original:";
+    cout<<"Reverse:";
     printArray(arr,size);
 
     double target=8.6;

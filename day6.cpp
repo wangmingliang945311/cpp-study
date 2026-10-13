@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 double getAverage(int arr[],int size){
     int total=0;
     for (int i=0;i<size;i++){
@@ -20,17 +21,17 @@ int main(){
     int scores[5]={90,85,78,96,88};
     int length=5;
 
-    std::cout<<"All scores is:";
+    cout<<"All scores is:";
     for(int i=0;i<length;i++){
-        std::cout<<scores[i]<<" ";
+        cout<<scores[i]<<" ";
     }
-    std::cout<<std::endl;
+    cout<<endl;
 
     double avg=getAverage(scores,length);
-    std::cout<<"Average score is:"<<avg<<std::endl;
+    cout<<"Average score is:"<<avg<<endl;
     
     int maxScore=findMaxInArray(scores,length);
-    std::cout<<"Max score is:"<<maxScore<<std::endl;
+    cout<<"Max score is:"<<maxScore<<endl;
 
     return 0;
 }

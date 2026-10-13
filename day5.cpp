@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 bool isLeapYear(int year){
     return(year%4==0&&year%100!=0||year%400==0);
 }
@@ -11,23 +12,23 @@ int findMax(int a,int b,int c){
 void printMultiTable(int n){
     for(int j=1;j<=n;j++){
         for(int i=1;i<=j;i++){
-            std::cout<<i<<"*"<<j<<"="<<(i*j)<<"\t";
+            cout<<i<<"*"<<j<<"="<<(i*j)<<"\t";
         }
-        std::cout<<std::endl;
+        cout<<endl;
     }
 }
 int main(){
     int year=2024;
     if(isLeapYear(year)){
-        std::cout<<year<<" is a leap year."<<std::endl;
+        cout<<year<<" is a leap year."<<endl;
     }else{
-        std::cout<<year<<" is not a leap year."<<std::endl;
+        cout<<year<<" is not a leap year."<<endl;
     }
 
 int maxNum=findMax(10,45,23);
-std::cout<<"Max number is:"<<maxNum<<std::endl;
+cout<<"Max number is:"<<maxNum<<endl;
 
-std::cout<<"Multiplication Table(5*5):"<<std::endl;
+cout<<"Multiplication Table(5*5):"<<endl;
 printMultiTable(5);
 
 return 0;
