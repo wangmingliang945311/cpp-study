@@ -31,8 +31,8 @@ int main(){
     addOne(&a);
     cout<<"after addOne,a="<<a<<endl;
 
-    int* empty=NULL;
-    if(empty!=NULL){
+    int* empty=nullptr;
+    if(empty!=nullptr){
         cout<<*empty<<endl;
     }else{
         cout<<"empty pointer,cannot dereference"<<endl;
